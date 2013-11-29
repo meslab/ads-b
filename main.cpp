@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <thread>
+#include "UnitTest++.h"
 
 using namespace std;
 
@@ -40,6 +41,9 @@ void hello()
 
 int main()
 {
+
+    return UnitTest::RunAllTests();
+ /*
     try
     {
         thread t(read_input);
@@ -55,4 +59,6 @@ int main()
     }
 
     return 0;
+*/
 }
+

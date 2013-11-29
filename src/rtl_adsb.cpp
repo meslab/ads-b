@@ -405,7 +405,7 @@ int main(int argc, char **argv)
 		filename = argv[optind];
 	}
 
-	buffer = malloc(DEFAULT_BUF_LENGTH * sizeof(uint8_t));
+	// buffer = malloc(DEFAULT_BUF_LENGTH * sizeof(uint8_t));
 
 	device_count = rtlsdr_get_device_count();
 	if (!device_count) {
