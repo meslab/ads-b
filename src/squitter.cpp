@@ -7,7 +7,10 @@
 using namespace std;
 
 squitter::squitter(std::string s_):in(s_) {
-
+    //int len = in.length();
+    for (unsigned int i = 0; i < in.length(); ++i){
+        hex2dec(this->dec[i],s_[i]);
+    }
 }
 
 std::string squitter::get_in()
@@ -15,8 +18,12 @@ std::string squitter::get_in()
     return this->in;
 }
 
-long int squitter::get_dec(){
+int* squitter::get_dec(){
     return this->dec;
+}
+
+int squitter::get_dec(int i){
+    return this->dec[i];
 }
 
 void hex2dec(int& i, char& s){

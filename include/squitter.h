@@ -19,12 +19,13 @@ public:
     squitter(std::string s_);
     virtual ~squitter();
     std::string get_in();
-    long int get_dec();
+    int* get_dec();
+    int get_dec(int i);
     // void hex2dec(int& i_, char& c_);
 protected:
 private:
     std::string in;
-    unsigned long int dec = 0;
+    int dec[28]{};
 };
 
 #endif // SQUITTER_H

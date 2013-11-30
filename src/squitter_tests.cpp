@@ -31,6 +31,24 @@ TEST(hex_test_over)
         CHECK_THROW(hex2dec(t,c), exception);
 }
 
+TEST(get_bin_test_1)
+{
+    std::string in = "f";
+    squitter* a = new squitter(in);
+    CHECK_EQUAL(15,(a->get_dec(0)));
+
+    delete a;
+}
+
+TEST(get_bin_test_2)
+{
+    std::string in = "ff";
+    squitter* a = new squitter(in);
+    CHECK_EQUAL(255,(a->get_dec(0)*16 + a->get_dec(1)));
+
+    delete a;
+}
+
 /*
 TEST(get_bin_test1)
 {
