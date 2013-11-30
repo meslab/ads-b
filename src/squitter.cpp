@@ -1,9 +1,13 @@
 #include "squitter.h"
 #include <string>
+#include <iostream>
+#include <assert.h>
+#include <exception>
+
+using namespace std;
 
 squitter::squitter(std::string s_):in(s_) {
 
-    hex2dec(dec,in);
 }
 
 std::string squitter::get_in()
@@ -15,15 +19,20 @@ long int squitter::get_dec(){
     return this->dec;
 }
 
-void squitter::hex2dec(long int& i_, std::string& s_){
+void hex2dec(int& i, char& s){
 
-    this->dec = i_;
-    this->in = s_;
+    assert(i == 0);
 
-
-
-
-}
+        if (s <= '9' && s >= '0'){
+            i = int(s - '0');
+        } else if (s <= 'f' && s >= 'a'){
+             i = (int(s) - 87);
+        } else if (s <= 'F' && s >= 'A'){
+             i = (int(s) - 55);
+        } else {
+            throw not_hex_exc();
+        }
+    }
 
 squitter::~squitter()
 {

@@ -1,5 +1,6 @@
 #include "squitter.h"
 #include "UnitTest++.h"
+#include <iostream>
 
 namespace
 {
@@ -13,7 +14,25 @@ TEST(get_in_test)
     delete a;
 }
 
-TEST(get_bin_test)
+TEST(hex_test_1)
+{
+        int t = 0;
+        char c = '1';
+        hex2dec(t,c);
+        CHECK_EQUAL(1,t);
+}
+
+
+TEST(hex_test_over)
+{
+        int t = 0;
+        char c = 'g';
+        // hex2dec(t,c);
+        CHECK_THROW(hex2dec(t,c), exception);
+}
+
+/*
+TEST(get_bin_test1)
 {
     std::string in = "ffffdebeaf";
     squitter* a = new squitter(in);
@@ -21,4 +40,5 @@ TEST(get_bin_test)
 
     delete a;
 }
+*/
 }
