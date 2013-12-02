@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1385837983 source:/home/anton.sidorov/ads-b/sizeof/main.cpp
+	<iostream>
+	<unistd.h>
+

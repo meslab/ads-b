@@ -1,4 +1,5 @@
 #include "squitter.h"
+#include "squitter_short.h"
 #include "UnitTest++.h"
 #include <iostream>
 
@@ -16,7 +17,7 @@ TEST(get_in_test)
 
 TEST(hex_test_1)
 {
-        int t = 0;
+        int t{};
         char c = '1';
         hex2dec(t,c);
         CHECK_EQUAL(1,t);
@@ -27,7 +28,6 @@ TEST(hex_test_over)
 {
         int t = 0;
         char c = 'g';
-        // hex2dec(t,c);
         CHECK_THROW(hex2dec(t,c), exception);
 }
 
@@ -49,11 +49,20 @@ TEST(get_bin_test_2)
     delete a;
 }
 
+TEST(get_bin_test_3)
+{
+    std::string in = "ff";
+    squitter_short* a = new squitter_short(in);
+    CHECK_EQUAL(255,(a->get_dec(0)*16 + a->get_dec(1)));
+
+    delete a;
+}
+
 /*
 TEST(get_bin_test1)
 {
     std::string in = "ffffdebeaf";
-    squitter* a = new squitter(in);
+    squitter_short* a = new squitter_short(in);
     CHECK_EQUAL(1099509448367,a->get_dec());
 
     delete a;

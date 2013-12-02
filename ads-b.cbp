@@ -39,8 +39,10 @@
 			<Add library="/home/anton.sidorov/test/UnitTest++/Deliv/Release/libUnitTest++.a" />
 		</Linker>
 		<Unit filename="include/squitter.h" />
+		<Unit filename="include/squitter_short.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/squitter.cpp" />
+		<Unit filename="src/squitter_short.cpp" />
 		<Unit filename="src/squitter_tests.cpp" />
 		<Extensions>
 			<code_completion />

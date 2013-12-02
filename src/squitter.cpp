@@ -6,10 +6,12 @@
 
 using namespace std;
 
-squitter::squitter(std::string s_):in(s_) {
+squitter::squitter(){}
+
+squitter::squitter(std::string s):in(s) {
     //int len = in.length();
     for (unsigned int i = 0; i < in.length(); ++i){
-        hex2dec(this->dec[i],s_[i]);
+        hex2dec(this->dec[i],s[i]);
     }
 }
 
