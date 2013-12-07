@@ -1,1 +1,17 @@
 # depslib dependency file v1.0
+1386437752 source:/home/anton.sidorov/ads-b/adsb/src/squitter.cpp
+	"squitter.h"
+	<string>
+	<iostream>
+	<assert.h>
+	<exception>
+
+1386437752 /home/anton.sidorov/ads-b/adsb/include/squitter.h
+	<string>
+
+1386437723 source:/home/anton.sidorov/ads-b/adsb/src/squitter_short.cpp
+	"squitter_short.h"
+
+1386434983 /home/anton.sidorov/ads-b/adsb/include/squitter_short.h
+	<squitter.h>
+
