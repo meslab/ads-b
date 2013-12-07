@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/libadsb" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/adsb" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -18,7 +18,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/libadsb" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/adsb" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -33,10 +33,18 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-Weffc++" />
+			<Add option="-pedantic" />
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-fPIC" />
+			<Add directory="include" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="include/squitter.h" />
+		<Unit filename="include/squitter_short.h" />
+		<Unit filename="src/squitter.cpp" />
+		<Unit filename="src/squitter_short.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

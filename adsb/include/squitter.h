@@ -16,7 +16,6 @@ void hex2dec(int& i, char& s);
 class squitter
 {
 public:
-    squitter();
     squitter(std::string s);
     virtual ~squitter();
     std::string get_in();

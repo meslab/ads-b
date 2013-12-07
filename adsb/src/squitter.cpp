@@ -6,8 +6,6 @@
 
 using namespace std;
 
-squitter::squitter(){}
-
 squitter::squitter(std::string s):in(s) {
     //int len = in.length();
     for (unsigned int i = 0; i < in.length(); ++i){
