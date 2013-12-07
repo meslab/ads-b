@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1386433304 source:/home/anton.sidorov/ads-b/adsbtest/main.cpp
+	<iostream>
+	<unistd.h>
+	<thread>
+	"UnitTest++.h"
+	"squitter.h"
+
+1188373710 /home/anton.sidorov/test/UnitTest++/src/UnitTest++.h
+	"Config.h"
+	"Test.h"
+	"TestList.h"
+	"TestSuite.h"
+	"TestResults.h"
+	"TestMacros.h"
+	"CheckMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+
+1225381116 /home/anton.sidorov/test/UnitTest++/src/Config.h
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/Test.h
+	"TestDetails.h"
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/TestDetails.h
+
+1180474958 /home/anton.sidorov/test/UnitTest++/src/TestList.h
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/TestSuite.h
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/TestResults.h
+
+1225398426 /home/anton.sidorov/test/UnitTest++/src/TestMacros.h
+	"Config.h"
+	"ExecuteTest.h"
+	"AssertException.h"
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/ExecuteTest.h
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"AssertException.h"
+	"CurrentTest.h"
+	"Posix/SignalTranslator.h"
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/MemoryOutStream.h
+	"Config.h"
+	<sstream>
+	<cstddef>
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/AssertException.h
+	<exception>
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/CurrentTest.h
+
+1224691002 /home/anton.sidorov/test/UnitTest++/src/Posix/SignalTranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/CheckMacros.h
+	"Checks.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+	"CurrentTest.h"
+
+1225380462 /home/anton.sidorov/test/UnitTest++/src/Checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/TestRunner.h
+	"Test.h"
+	"TestList.h"
+	"CurrentTest.h"
+
+1225294688 /home/anton.sidorov/test/UnitTest++/src/TimeConstraint.h
+	"TimeHelpers.h"
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/TimeHelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1174322056 /home/anton.sidorov/test/UnitTest++/src/Posix/TimeHelpers.h
+	<sys/time.h>
+
+1225381116 /home/anton.sidorov/test/UnitTest++/src/Win32/TimeHelpers.h
+	"../Config.h"
+
+1386433800 /home/anton.sidorov/ads-b/adsb/include/squitter.h
+	<string>
+
+1386433560 source:/home/anton.sidorov/ads-b/adsbtest/src/squitter_tests.cpp
+	"squitter.h"
+	"squitter_short.h"
+	"UnitTest++.h"
+	<iostream>
+
+1386434983 /home/anton.sidorov/ads-b/adsb/include/squitter_short.h
+	<squitter.h>
+
